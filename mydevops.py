@@ -61,7 +61,27 @@ for i in range(1,6):
     r1 = random.randint(1,53)
     print(r1)
 
-'''
+
 
 for i in range(5):
     print(random.randint(1, 53))
+
+
+
+performances = {'Ventriloquism':'9:00am', 
+                'Snake Charmer': '12:00pm', 
+                'Amazing Acrobatics': '2:00pm', 
+                'Enchanted Elephants':'5:00pm'}
+
+for name, price in performances.items():
+    print(name, ':', price, sep=(''))
+
+'''
+
+performances = {'Ventriloquism': '9:00am',
+                'Snake Charmer': '12:00pm',
+                'Amazing Acrobatics': '2:00pm',
+                'Enchanted Elephants': '5:00pm'}
+
+for i, j in performances.items():
+    print(i, ':', j, sep='')
