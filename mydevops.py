@@ -35,6 +35,8 @@ import math
 #mylist.remove('cheers')
 
 #print(mylist,performances)
+
+'''
 total = 0 
 prices = [2.5,3.5,4.5]
 
@@ -51,3 +53,15 @@ print(r1)
 for i in range(1,10):
     ticket = random.randint(100, 1000)
     print(i, 'Ticket no is : ',ticket)
+
+
+
+r1=0
+for i in range(1,6):
+    r1 = random.randint(1,53)
+    print(r1)
+
+'''
+
+for i in range(5):
+    print(random.randint(1, 53))
