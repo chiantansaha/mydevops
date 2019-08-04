@@ -1,0 +1,50 @@
+# A Perforce Client Specification.
+#
+#  Client:      The client name.
+#  Update:      The date this specification was last modified.
+#  Access:      The date this client was last used in any way.
+#  Owner:       The user who created this client.
+#  Host:        If set, restricts access to the named host.
+#  Description: A short description of the client (optional).
+#  Root:        The base directory of the client workspace.
+#  AltRoots:    Up to two alternate client workspace roots.
+#  Options:     Client options:
+#                      [no]allwrite [no]clobber [no]compress
+#                      [un]locked [no]modtime [no]rmdir
+#  SubmitOptions:
+#                      submitunchanged/submitunchanged+reopen
+#                      revertunchanged/revertunchanged+reopen
+#                      leaveunchanged/leaveunchanged+reopen
+#  LineEnd:     Text file line endings on client: local/unix/mac/win/share.
+#  View:        Lines to map depot files into the client workspace.
+#
+# Use 'p4 help client' to see more about client views and options.
+
+Client:	BuildManager-Client-SGPDWM013584
+
+Update:	2009/03/05 05:47:31
+
+Access:	2009/03/05 05:48:11
+
+Owner:	sysbuildsvc
+
+Host:	SGPDWM013584
+
+Description:
+	Created by sysbuildsvc.
+
+Root:	c:\
+
+Options:	noallwrite noclobber nocompress unlocked nomodtime rmdir
+
+SubmitOptions:	revertunchanged
+
+LineEnd:	local
+
+View:
+	//depot/FinanceIT/RegIT/CASTLE1/users/sahachir/mydev/BuildManager/... //BuildManager-Client-SGPDWM013584/BuildManager/...
+	//depot/FinanceIT/RegIT/CASTLE1/users/sahachir/mydev/report/... //BuildManager-Client-SGPDWM013584/devIIS/Inetpub/WWWroot/report/...
+	//depot/FinanceIT/RegIT/CASTLE1/users/sahachir/mydev/images/... //BuildManager-Client-SGPDWM013584/devIIS/Inetpub/WWWroot/images/...
+	//depot/FinanceIT/RegIT/Docs/REGIT-Environment-Details.xls //BuildManager-Client-SGPDWM013584/devIIS/Inetpub/WWWroot/report/REGIT-Environment-Details.xls
+	//depot/FinanceIT/RegIT/Docs/P4Docs/... //BuildManager-Client-SGPDWM013584/devIIS/Inetpub/WWWroot/report/P4Docs/...
+	//depot/FinanceIT/RegIT/Docs/BuildDocs/... //BuildManager-Client-SGPDWM013584/devIIS/Inetpub/WWWroot/report/BuildDocs/...

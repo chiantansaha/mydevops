@@ -1,0 +1,19 @@
+# A Perforce Client Specification.
+
+Client:	<client>
+
+Owner:	<owner>
+
+Host:	sgpdwm019296
+
+Description:
+	Client Spec for CM build
+
+Root:	C:/build/aa
+
+Options:	noallwrite noclobber nocompress unlocked nomodtime normdir
+
+LineEnd:	local
+
+View:
+	//depot/FinanceIT/RegIT/... //<client>/depot/FinanceIT/RegIT/...

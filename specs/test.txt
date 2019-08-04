@@ -1,0 +1,1 @@
+STATUS:  //depot/FinanceIT/RegIT/CASTLE1/users/sahachir/mydev/BuildManager/specs/clientspec.txt#1 - added as C:\p4clients\csaha-test\depot\FinanceIT\RegIT\CASTLE1\users\sahachir\mydev\BuildManager\specs\clientspec.txt

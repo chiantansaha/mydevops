@@ -1,0 +1,21 @@
+# A Perforce Client Specification.
+
+Client:	<client>
+
+Owner:	<owner>
+
+Host:	<host>
+
+Description:
+	Client Spec for CM build
+
+Root:	/home/ixsdk/build/<product>-<branchExt>-<dirName>
+
+Options:	noallwrite noclobber nocompress unlocked nomodtime normdir
+
+LineEnd:	local
+
+View:
+	//<product>/... //<client>/<product>/...
+	//aptixia/... //<client>/aptixia/...
+	//packages/... //<client>/packages/...

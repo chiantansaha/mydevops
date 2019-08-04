@@ -1,0 +1,20 @@
+# A Perforce Client Specification.
+
+
+Client:	<client>
+
+Owner:	<owner>
+
+Host:	<host>
+
+Description:
+	client Spec for Unix build
+
+Root:	/home/ixsdk/build/<product>-<branchExt>-<dirName>
+
+Options:	noallwrite noclobber nocompress unlocked nomodtime normdir
+
+LineEnd:	local
+
+View:
+	//<product>/<branch>/... //<client>/<product>/<branch>/...

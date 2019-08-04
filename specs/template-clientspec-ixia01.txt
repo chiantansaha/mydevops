@@ -1,0 +1,20 @@
+# A Perforce Client Specification.
+
+Client:	<client>
+
+Owner:	<owner>
+
+Host:	<host>
+
+Description:
+	Client Spec for CM build
+
+Root:	<rootDrive>/p4root/build.<product>.<productfullversion>
+
+Options:	noallwrite noclobber nocompress unlocked nomodtime normdir
+
+LineEnd:	local
+
+View:
+	//<product>/<branch>/versioninfo.ini //<client>/versioninfo.ini	
+	//<product>/<branch>/InstallerX/... //<client>/InstallerX/...	
