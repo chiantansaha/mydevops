@@ -22,4 +22,5 @@ def main():
     #print(s)
     s=reverse3([6, 1, 2, 3])
     print(s)
-    
+
+main()
