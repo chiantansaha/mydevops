@@ -1,2 +1,2 @@
-# hackerrank-30-days-of-code
-My solutions to HackerRank's 30 days of code challenge. 
+# Chirantan's DevOps Code
+My solutions to code challenge. 
