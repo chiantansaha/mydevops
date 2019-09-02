@@ -36,6 +36,9 @@ import math
 
 #print(mylist,performances)
 
+for __ in range(10):
+	print('running')
+
 '''
 total = 0 
 prices = [2.5,3.5,4.5]
@@ -76,7 +79,6 @@ performances = {'Ventriloquism':'9:00am',
 for name, price in performances.items():
     print(name, ':', price, sep=(''))
 
-'''
 
 performances = {'Ventriloquism': '9:00am',
                 'Snake Charmer': '12:00pm',
@@ -85,3 +87,4 @@ performances = {'Ventriloquism': '9:00am',
 
 for i, j in performances.items():
     print(i, ':', j, sep='')
+'''
