@@ -27,5 +27,5 @@ if __name__ == '__main__':
     result = superDigit(n, k)
 
     fptr.write(str(result) + '\n')
-
+    print("Pls look at myrecursive.txt for the result")
     fptr.close()

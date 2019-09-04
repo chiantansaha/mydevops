@@ -16,7 +16,16 @@ def superDigit(n,k):
     print(number_to_deal_with)
     sum_of_k = sumOfNumbers(number_to_deal_with)
     return(sum_of_k)
-    
+
+def superForDigit(n,k):
+    number_to_deal_with = ""
+ 
+    for p in range(0,k):
+        number_to_deal_with=number_to_deal_with+str(n)
+    print(number_to_deal_with)
+    sum_of_k = sumOfNumbers(number_to_deal_with)
+    return(sum_of_k)
+
 def sumOfNumbers(nu):
     sum_of_n=0
      
@@ -31,10 +40,10 @@ def sumOfNumbers(nu):
 if __name__ == '__main__':
     nk = input().split()
 
-    n = int(nk[0])
+    n = int(nk[0]) # The main number 
 
-    k = int(nk[1])
+    k = int(nk[1]) # The multiplier 
 
-    result = superDigit(n,k)
+    result = superForDigit(n,k)
 
     print(result)
