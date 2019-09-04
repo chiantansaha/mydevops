@@ -108,6 +108,87 @@ class LinkedList:
             n = n.ref
         return count
 
+    def search_item(self, x):
+        if self.start_node is None:
+            print("List has no elements")
+            return
+        n = self.start_node
+        while n is not None:
+            if n.item == x:
+                print("Item found")
+                return True
+            n = n.ref
+        print("item not found")
+        return False
+
+
+# Creating a Linked List
+
+    def make_new_list(self):
+        nums = int(input("How many nodes do you want to create: "))
+        if nums == 0:
+            return
+        for i in range(nums):
+            value = int(input("Enter the value for the node:"))
+            self.insert_at_end(value)
+
+# Deletion from the Start
+
+    def delete_at_start(self):
+        if self.start_node is None:
+            print("The list has no element to delete")
+            return 
+        self.start_node = self.start_node.ref
+
+# Deletion from the end
+
+    def delete_at_end(self):
+        if self.start_node is None:
+            print("The list has no element to delete")
+            return
+
+        n = self.start_node
+        while n.ref.ref is not None:
+            n = n.ref
+        n.ref = None
+
+# Deletion by value 
+
+    def delete_element_by_value(self, x):
+        if self.start_node is None:
+            print("The list has no element to delete")
+            return
+
+        # Deleting first node 
+        if self.start_node.item == x:
+            self.start_node = self.start_node.ref
+            return
+
+        n = self.start_node
+        while n.ref is not None:
+            if n.ref.item == x:
+                break
+            n = n.ref
+
+        if n.ref is None:
+            print("item not found in the list")
+        else:
+            n.ref = n.ref.ref
+
+# Reversing a linked List
+
+    def reverse_linkedlist(self):
+        prev = None
+        n = self.start_node
+        while n is not None:
+            next = n.ref
+            n.ref = prev
+            prev = n
+            n = next
+        self.start_node = prev
+
+
+'''     
 # First, create an object of the linked list class as follows:
 new_linked_list = LinkedList()
 new_linked_list.insert_at_end(5)
@@ -116,7 +197,6 @@ new_linked_list.insert_at_end(15)
 
 # let's traverse through the linked list using traverse function.
 new_linked_list.traverse_list()
-
 
 new_linked_list.insert_at_start(20)
 new_linked_list.traverse_list()
@@ -130,4 +210,14 @@ new_linked_list.insert_before_item(17, 25)
 # let's add an element at the third location
 new_linked_list.insert_at_index(3,8)
 
-new_linked_list.get_count()
+'''
+new_linked_list = LinkedList()
+new_linked_list.make_new_list()
+new_linked_list.insert_at_start(7)
+new_linked_list.insert_before_item(7,0)
+
+print("Now Traverse")
+new_linked_list.traverse_list()
+llist_count = new_linked_list.get_count()
+print("Count = ", llist_count)
+
