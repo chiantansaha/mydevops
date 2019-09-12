@@ -187,6 +187,25 @@ class LinkedList:
             n = next
         self.start_node = prev
 
+    def detectLoop(self): 
+         s = set() 
+         temp = self.start_node
+         while (temp): 
+          
+             # If we have already has 
+             # this node in hashmap it 
+             # means their is a cycle 
+             # (Because you we encountering 
+             # the node second time). 
+            if (temp in s): 
+                return True
+     
+            # If we are seeing the node for 
+            # the first time, insert it in hash 
+            s.add(temp) 
+     
+            temp = temp.ref     
+         return False
 
 '''     
 # First, create an object of the linked list class as follows:
@@ -215,9 +234,14 @@ new_linked_list = LinkedList()
 new_linked_list.make_new_list()
 new_linked_list.insert_at_start(7)
 new_linked_list.insert_before_item(7,0)
+new_linked_list.insert_at_end(88) 
 
 print("Now Traverse")
 new_linked_list.traverse_list()
 llist_count = new_linked_list.get_count()
 print("Count = ", llist_count)
 
+new_linked_list.start_node.ref.ref.ref.ref = new_linked_list.start_node;
+
+check_loop = new_linked_list.detectLoop()
+print("Check loop :",check_loop)
