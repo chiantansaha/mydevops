@@ -29,8 +29,16 @@ obj = Solution()
 l = len(s)
 # push/enqueue all the characters of string s to stack
 for i in range(l):
+    print(s[i])
     obj.pushCharacter(s[i])
+    #print(obj.pushCharacter(s[i]))
     obj.enqueueCharacter(s[i])
+    #print(obj.enqueueCharacter(s[i]))
+
+#pc = obj.pushCharacter(s)
+#pe = obj.enqueueCharacter(s)
+#print(pc)
+#print(pe)
 
 isPalindrome = True
 '''
